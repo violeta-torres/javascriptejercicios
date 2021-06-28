@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1;
+        let numero2;
+        let numero3;
+
+        numero1 = parseInt (prompt("Dame un numero" ));
+        numero2 = parseInt (prompt ("Dame otro numero"));
+        numero3 = parseInt (prompt("Dame otro numero"));
+
+        if (numero1 > numero2 && numero2 < numero3){
+
+       
+        document.write("El numero mayor es"+ numero1);
+
+    }else if (numero1 < numero2 && numero2 > numero3){
+
+        document.write("El numero mayor es" + numero2);
+
+    }else if (numero1 < numero2 && numero2 < numero3){
+
+        document.write("El numero mayor es " + numero3);
+    }
+
+    </script>
+</body>
+</html>

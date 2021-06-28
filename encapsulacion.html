@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulacion</title>
+</head>
+<body>
+    <script>
+        //La encapsulacion sirve para proteger inofrmacion
+        var Persona = function(){
+            var _nombre, _edad;
+            _nombre = "Violeta";//no se pueden ver los datos
+            
+            this.getNombre = function(){// con la funcio THIS  se pueden ver 
+                return _nombre;
+            }
+            this.setNombre = function (nombreNuevo){
+                 _nombre = nombreNuevo;
+           }
+        };   
+
+        
+        var persona1 = new Persona();
+        console.log (persona1.getNombre());
+        persona1.setNombre("Yui");
+        console.log (persona1.getNombre());
+        
+    </script>
+</body>
+</html>
