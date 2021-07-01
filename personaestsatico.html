@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Estatico</title>
+</head>
+<body>
+    <script>
+        class Persona { //clase 
+          constructor (nombre, edad){ //forma de inicializar estado de la clase (entre parentecis, parametros)
+            this.nombre= nombre; //con this se convierten en propiedades
+            this.edad= edad;
+
+
+          }
+          saludar(){ //metodo
+            console.log (`Hola mi nombre es ${this.nombre} y tengo ${this.edad}`);
+
+          }
+        static definicion(){ // Metodo estatico, estos se llaman SIN hacer INSTANCAS
+            console.log("Una persona es un ser humano")
+        }
+  }
+  Persona.definicion(); //Accedemos al metodo estatico con el nombre de la  clase
+    </script>
+
+</body>
+</html>

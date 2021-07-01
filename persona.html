@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases con Objetos</title>
+</head>
+<body>
+    <script>
+        class Persona { //clase 
+          constructor (nombre, edad){ //forma de inicializar estado de la clase (entre parentecis, parametros)
+            this.nombre= nombre; //con this se convierten en propiedades
+            this.edad= edad;
+
+
+          }
+          saludar(){ //metodo
+            console.log (`Hola mi nombre es ${this.nombre} y tengo ${this.edad}`);
+
+          }
+  
+  }
+  let persona = new Persona ('Violeta', 34); //(Es una instancia) creamos una variable llamando a la calse "persona" y le damos valores a los parametros
+  persona.saludar(); //Para que el metodo se ejecute hacemos referencia a la clase persona + metodo saludar 
+
+    </script>
+</body>
+</html>
